@@ -34,6 +34,7 @@ nav {
 /*Color del fondo de la pagina*/
 body {
     background-color: #EBE1E4;
+    margin: 0;
 }
 
 /*Footer de las pagina*/
@@ -92,10 +93,10 @@ footer {
     color: #2E534B;
 }
 
- /*No funciona y no se por que debe de poner la letra capital
- #fraseinicio::first-letter {
+
+ #fraseinicio p::first-letter {
     font-size: 90px;
-}*/
+}
 
 /*Contenido multimedia imagen de pagina de inicio*/
 #imageninicio {

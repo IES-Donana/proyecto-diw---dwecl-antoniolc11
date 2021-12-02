@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CONTACTO</title>
   <link rel="stylesheet" href="styles/style.css">
-  <script src="js/validacion.js" defer></script>
+  <script src="js/validacionform.js" defer></script>
 </head>
 <body>
   <header>
@@ -30,13 +30,13 @@
         <div>
           <form action="" id="formcontacto">
               <label for="nombre">Nombre: </label>
-              <input type="text" name="nombre" id="nombre">
+              <input type="text" name="nombre" id="nombre" pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}" required>
               <label for="apellidos">Apellidos: </label>
-              <input type="text" name="apellidos" id="apellidos">
+              <input type="text" name="apellidos" id="apellidos" pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}" required>
               <label for="telefono">Teléfono:</label>
               <input type="number" name="telefono" id="telefono">
               <label for="email">Email: </label>
-              <input type="email" name="email" id="email">
+              <td><input type="text" name="email" id="email" pattern="^[a-z]+\d*[a-z@[a-z]+\.[a-z]{2,3}(\.[a-z]{2,3})?"required>
               <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres tu consulta." maxlength="300"></textarea>
               <button type="submit" id="enviar">Enviar</button>
           </form>

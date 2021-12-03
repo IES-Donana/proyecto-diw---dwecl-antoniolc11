@@ -13,9 +13,58 @@
     src: url(/fonts/Roboto-Bold.ttf);
 }
 
+#desplegable {
+    display: none;
+}
+
+#botonmenu {
+    width: 3em;
+    height: 3em;
+    margin: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+.enabled-menu {
+    display: block;
+}
+
+.disable-menu {
+    display: none;
+}
+
+#opcs-menu {
+    background-color: lightgrey;
+    text-align: center;
+
+    width: 100%;
+
+}
+
+#desplegable {
+    display: flexbox;
+}
+
+#desplegable ul li {
+    display: block;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.2em;
+    color: #4e615d;
+    font-family: Roboto-regular;
+}
+
+
+
+
+
+
 
 /*Menú de navegación*/
-nav ul li, a {
+.menu-nav ul li, a {
     display: inline-block;
     text-decoration: none;
     margin-left: 1em;
@@ -26,11 +75,11 @@ nav ul li, a {
 }
 
 nav ul li, a:hover {
-    transform:scale(1.10); 
+    transform:scale(1.10);
 }
 
 /*Centramos el menu de navegación utilizando flex*/
-nav {
+.menu-nav {
     display: flex;
     justify-content: center;
 }
@@ -68,7 +117,7 @@ footer {
     text-decoration: underline #2E534B 2px;
     font-size: 1.4em;
     font-family: Roboto-bold;
-    
+
 }
 
 
@@ -405,6 +454,14 @@ font-family: Roboto-regular;
 /*----------------------------------VERSION MOBILE--------------------------------------------*/
 
 @media only screen and (max-width: 480px){
+
+    #navprincipal {
+        display: none;
+    }
+
+    #desplegable {
+        display: flex;
+    }
 
     /*Menú de navegación*/
     nav ul li, a {

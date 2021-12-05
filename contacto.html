@@ -36,8 +36,8 @@
               <label for="telefono">Teléfono:</label>
               <input type="number" name="telefono" id="telefono">
               <label for="email">Email: </label>
-              <td><input type="text" name="email" id="email" pattern="^[a-z]+\d*[a-z@[a-z]+\.[a-z]{2,3}(\.[a-z]{2,3})?"required>
-              <textarea name="mensaje" for="mensaje" placeholder="Describe brevemente en menos de 300 carácteres tu consulta." maxlength="300"></textarea>
+              <input type="text" name="email" id="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+              <textarea name="mensaje" for="mensaje" id="mensaje" placeholder="Describe brevemente en menos de 300 carácteres tu consulta." maxlength="300" required></textarea><br>
               <button type="submit" id="enviar">Enviar</button>
           </form>
         </div>

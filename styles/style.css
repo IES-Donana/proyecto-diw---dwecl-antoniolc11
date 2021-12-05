@@ -58,10 +58,9 @@ ul {
 }
 
 
-
-
-
-
+.error {
+    background-color: #f3a7a7;
+}
 
 /*Menú de navegación*/
 .menu-nav ul li, a {

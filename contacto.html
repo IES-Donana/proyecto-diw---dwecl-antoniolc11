@@ -7,10 +7,12 @@
   <title>CONTACTO</title>
   <link rel="stylesheet" href="styles/style.css">
   <script src="js/validacionform.js" defer></script>
+  <script src="js/menuhamburguesa.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="navprincipal">
+
       <div class="menu-nav">
         <ul>
           <li><a href="index.html" id="inicio">INICIO</a></li>
@@ -21,6 +23,14 @@
           <li><a href="contacto.html" id="subrayadomenu">CONTACTO</a></li>
         </ul>
       </div>
+    </nav>
+
+    <nav id="desplegable">
+      <button id="botonmenu">
+          <hr>
+          <hr>
+          <hr>
+      </button>
     </nav>
   </header>
 
@@ -37,7 +47,7 @@
               <input type="number" name="telefono" id="telefono">
               <label for="email">Email: </label>
               <input type="text" name="email" id="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
-              <textarea name="mensaje" for="mensaje" id="mensaje" placeholder="Describe brevemente en menos de 300 carácteres tu consulta." maxlength="300" required></textarea><br>
+              <textarea name="mensaje" for="mensaje" id="mensaje" placeholder="Describe brevemente en menos de 300 carácteres tu consulta." minlength="100" maxlength="300" required></textarea><br>
               <button type="submit" id="enviar">Enviar</button>
           </form>
         </div>

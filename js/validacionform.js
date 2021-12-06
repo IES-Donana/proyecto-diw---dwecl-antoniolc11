@@ -1,34 +1,48 @@
 /*
-Te explico el funcionamiento de mi codigo:
+Aquí explico el funcionamiento de mi codigo:
 
-    Se valida cada entrada, hasta que la entrada seleccionada no esté correctamente,
-    no dejará pasar a rellenar la siguiente entrada.
+    Se valida cada entrada en el momento en el que estamos modificando el formulario,
+    si no está bien la entrada no podemos abandonarla hasta que la escribamos correctamente,
+    Cuando todas las entradas estén correctamente validadas sé habilitará el textarea.
 
-    Cuando todas las entradas estén correctamente, habilitará el textarea.
+    El textarea debe de cumplir con un min de 100 caracteres y un max de 300,
+    hasta que no sea correcto no dejara salir del texarea.
 
-    Y cuando pulsemos el boton de enviar validará el textarea,
-    de esta manera nos aseguramos la validacion de todo el formulario,
-    la función validar formulario siempre devolverá true y realmente no sirve de
-    mucho en mi codigo, pero te la dejo incluida.
+    Cuando pulsemos el boton de enviar validará el textarea,
+    de esta manera nos aseguramos la validacion de todo el formulario completo,
 
-    Los manejadores de eventos utilizados son: keypress, blurr y click
+    Los manejadores de eventos utilizados son: keypress, blur y click.
 */
 
+/*Recogemos los datos necesarios para nuestra validación*/
 let entradas = document.getElementsByTagName('input');
 let enviar = document.getElementById('enviar');
-let formulario = document.getElementById("formcontacto");
 let textarea = document.getElementById("mensaje");
 let nombre = document.getElementById("nombre");
 let apellidos = document.getElementById("apellidos");
 let telefono = document.getElementById("telefono");
 let email = document.getElementById('email');
+
+/*Deshabilitamos nuestro textarea y creamos variable con la que comprobaremos que todos
+los campos sean validos antes de habilitar el textarea en la funcion validarInput*/
 textarea.disabled = true;
 let todosvalidos = 0;
+
+/*Validamos mientras escribimos en el formulario*/
 nombre.addEventListener("blur", validarInput);
 apellidos.addEventListener("blur", validarInput);
 telefono.addEventListener("blur", validarInput);
 email.addEventListener("blur", validarInput);
+
+/*Validamos textarea cuando vayamos a perder el foco, si no está
+  validado no nos permite perder el foco.
+*/
+textarea.addEventListener("blur", validartextarea);
+
+/*Cuando intentamos escribir en el campo email en mayusculas nos salta un alert*/
 email.addEventListener("keypress", mayusAlert);
+
+/*Comprobación final de todo el formulario a la hora de pulsar el boton enviar.*/
 enviar.addEventListener("click", validarformulario);
 enviar.addEventListener("click", validartextarea);
 
@@ -54,7 +68,7 @@ function validarInput(e) {
                 this.setCustomValidity(`El campo ${this.name} no puede ser vacio.`);
                 this.reportValidity();
             } else {
-                this.setCustomValidity("Utiliza un formato correcto.");
+                this.setCustomValidity("Utiliza un formato valido.");
                 this.reportValidity();
             }
             e.preventDefault();
@@ -74,7 +88,7 @@ function validarformulario() {
                 entradas[i].reportValidity();
 
             } else {
-                entradas[i].setCustomValidity("Utiliza un formato que coincida.");
+                entradas[i].setCustomValidity("Utiliza un formato valido.");
                 entradas[i].reportValidity();
             }
             return false;

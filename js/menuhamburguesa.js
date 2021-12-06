@@ -1,29 +1,14 @@
-console.log("Conectado a js");
+
+/*Recogemos el boton que hará que se muestre nuestro menú hamburguesa*/
 let boton = document.getElementById("botonmenu");
 
-boton.addEventListener("click", mostrarmenu) //Creamos el evento.
+/*Creamos el evento que ejecurara nuestro menú */
+boton.addEventListener("click", mostrarMenu);
 
-let a = true;
-function mostrarmenu(){
-
-    borrarmenudesplegable(); 
-    let menu = document.getElementById("opcs-menu");
-
-    //menu.classList.toggle("disable-menu");
-    //menu.classList.toggle("enable-menu"); 
-    /*
-    if (menu.classList.contains("disable-menu")){//Comprueba si menu contiene la clase "disable-menu"
-        menu.classList.remove("disable-menu"); //Quita la clase "disable-menu" del elemento menu
-        menu.classList.add("enabled-menu");    //Añade la clase "disable-menu" del elemento menu
-    }else {
-        menu.classList.remove("enabled-menu");
-        menu.classList.add("disable-menu");
-    }*/
-}
-
+/*Estructura que se creara en el documento con createElement*/
 /* <div id="opcs-menu" class="disable-menu">
           <ul>
-              <li><a href="index.html" id="subrayadomenu">INICIO</a></li>
+              <li><a href="index.html">INICIO</a></li>
               <li><a href="mis-proyectos.html">MIS PROYECTOS</a></li>
               <li><a href="testimonios.html">TESTIMONIOS</a></li>
               <li><a href="cv.html">CV</a></li>
@@ -71,7 +56,9 @@ let a6 = document.createElement("a");
 a6.setAttribute("href", "contacto.html");
 a6.textContent= "CONTACTO";
 
-function crearmenudesplegable() { 
+/*Crea la estructura de nuestro menú */
+
+function crearmenudesplegable() {
 
     li1.appendChild(a1);
     li2.appendChild(a2);
@@ -90,14 +77,14 @@ function crearmenudesplegable() {
     desplegable.appendChild(div);
 }
 
-function borrarmenudesplegable() {
+/**Comprueba si la estructura está mostrandose  y si es así lo borra
+   o al contrario que la crearia
+*/
+function mostrarMenu() {
     if(!div.isConnected){
-        crearmenudesplegable(); 
-        
+        crearmenudesplegable();
     }
     else{
         div.remove();
-        
     }
-
 }

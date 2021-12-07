@@ -51,10 +51,6 @@ opcs-menu ul {
 
 }
 
-#desplegable {
-    display: flexbox;
-}
-
 #opcs-menu ul li {
     display: block;
     text-decoration: none;

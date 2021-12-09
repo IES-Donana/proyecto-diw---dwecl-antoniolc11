@@ -40,9 +40,9 @@
         <div>
           <form action="index.html" id="formcontacto">
               <label for="nombre">Nombre: </label>
-              <input type="text" name="nombre" id="nombre" pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}" required>
+              <input type="text" name="nombre" id="nombre" pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}" minlength="4" maxlength="30" required>
               <label for="apellidos">Apellidos: </label>
-              <input type="text" name="apellidos" id="apellidos" pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}" required>
+              <input type="text" name="apellidos" id="apellidos" pattern="^((\s?[a-zA-ZáéíóúÁÉÍÓÚñÑ]+){1,2}){1,2}" minlength="4" maxlength="30" required>
               <label for="telefono">Teléfono:</label>
               <input type="number" name="telefono" id="telefono">
               <label for="email">Email: </label>

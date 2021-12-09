@@ -1,20 +1,12 @@
-<<<<<<< HEAD
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6420745&assignment_repo_type=AssignmentRepo)
-# Proyecto DIW - DWECL
-
-## ÍNDICE   
-=======
 # Proyecto DIW - DWECL
 
 ## ÍNDICE
->>>>>>> diw-entrega-2
 1. [DESCRIPCIÓN](#id1)
 2. [PROTOTIPO](#id2)
 3. [MODIFICACIONES A LA GUÍA DE ESTILOS](#id3)
 4. [RECURSOS](#id4)
 
 ## DESCRIPCIÓN<a name="id1"></a>
-<<<<<<< HEAD
 [Incluye la descripción de tu proyecto.]
 
 ## PROTOTIPO<a name="id2"></a>
@@ -26,7 +18,6 @@
 ## RECURSOS<a name="id4"></a>
 [Listado de recursos usados]
 
-=======
 Contenido de mi portafolios:
 Tendremos una pagína de inicio que tendrá información sobre el creador
 de la misma y además de una frase inspiradora a modo de presentación y bienvenida
@@ -63,7 +54,6 @@ https://www.figma.com/file/nA95lEglLbh2JdUJwmYX7d/Prototipo-de-mi-portafolios
 - https://nekocalc.com/es/px-a-em-conversor
 - https://www.w3schools.com/css/default.asp
 - https://developer.mozilla.org/es/docs/Web/CSS
->>>>>>> diw-entrega-2
 - Can I use?: https://caniuse.com/
 - Bootstrap: https://getbootstrap.com/
 - Tailwind: https://tailwindcss.com/docs

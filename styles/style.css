@@ -48,7 +48,6 @@ opcs-menu ul {
     animation-name: efectomenu;
     animation-duration: 1.5s;
     border-radius: 15px;
-
 }
 
 #opcs-menu ul li {
@@ -83,7 +82,8 @@ opcs-menu ul {
 }
 
 hr {
-    border: #2E534B solid 2px;
+    background-color: #2E534B;
+    border: #2E534B solid 2.5px;
     border-radius: 5px;
 }
 
@@ -401,7 +401,7 @@ footer {
 
 #sobremi {
     margin-top: 3.3em;
-    margin-left: -2em;
+    margin-left: -10.9em;
     font-size: 1.5em;
     color: #2E534B;
     font-family: Roboto-bold;
@@ -409,9 +409,10 @@ footer {
 
 #descripcionpersonal {
     font-size: 1.2em;
-    margin: 0em 7em 1em -2.5em;
+    margin: 0em 7em 1em -13.5em;
     color: #2E534B;
     font-family: Roboto-light;
+    width: 35em;
 }
 
 #alargarsesion {
@@ -539,7 +540,7 @@ nav ul li, a {
     #description-inicio {
         margin: 4em auto auto auto;
         text-align: center;
-        font-size: 15px;
+        font-size: 20px;
     }
 /**********************************************************************************************/
 

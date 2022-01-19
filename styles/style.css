@@ -96,17 +96,21 @@ hr {
 
 /*Menú de navegación*/
 
+#navprincipal {
+    display: flex;
+    flex-direction: row;
+}
+
 #logotipo {
     width: 6rem;
     margin-top: 0.5rem;
-    margin-left: -6.5rem;
+    margin-left: 1rem;
 }
 
 .menu-nav ul li, a {
-
     display: inline-block;
     text-decoration: none;
-    margin: auto 1em auto 1em;
+    margin: auto 0.5em auto 1em;
     font-size: 1.2em;
     color: #4e615d;
     font-family: Roboto-regular;
@@ -118,8 +122,6 @@ hr {
     margin-left: 3em;
     margin-right: 5em;
 }
-
-
 
 
 /*Cuando pasamos el cursor por encima se agranda el texto*/
@@ -279,7 +281,6 @@ footer {
     font-size: 1.5em;
     color: #2E534B;
     font-family: "Roboto-bold";
-
 }
 
 .comentariocliente {
@@ -298,6 +299,12 @@ footer {
     height: 15em;
     width: 26em;
     margin: 6em 12% 2em auto;
+    border-radius: 1em;
+}
+
+#videotesti {
+    width: 100%;
+    height: 100%;
     border-radius: 1em;
 }
 

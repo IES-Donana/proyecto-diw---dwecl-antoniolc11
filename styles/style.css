@@ -144,6 +144,12 @@ body {
     background-color:#EBE1E4;
 }
 
+#videofondo {
+    position: absolute;
+    z-index:-1;
+    width: 100vw;
+}
+
 
 /*Footer de las pagina*/
 footer {

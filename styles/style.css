@@ -225,6 +225,13 @@ footer {
 
 }
 
+#imagenportada {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    transform: rotate(179.8deg);
+}
+
 /*En la pagina de inicio me describe un poco*/
 #description-inicio {
     margin: 3.7em auto 2em auto;

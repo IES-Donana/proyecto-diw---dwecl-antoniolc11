@@ -64,7 +64,6 @@ opcs-menu ul {
 #opcs-menu ul li a:hover {
     font-size: 1em;
     width: 100%;
-
 }
 
 #opcs-menu ul li{
@@ -101,21 +100,32 @@ hr {
     flex-direction: row;
 }
 
+/*ANIMACION PARA EL LOGOTIPO*/
+@keyframes logotipo {
+    0% {filter: opacity(0);}
+    100% {filter: opacity(100);}
+}
+
+/*LOGOTIPO DE LA PAGINA*/
 #logotipo {
     width: 6rem;
     margin-top: 0.5rem;
     margin-left: 1rem;
+    animation-name: logotipo;
+    animation-duration: 10s;
+    animation-timing-function: linear;
 }
 
 .menu-nav ul li, a {
     display: inline-block;
     text-decoration: none;
     margin: auto 0.5em auto 1em;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #4e615d;
     font-family: Roboto-regular;
 }
 
+/*transition menu de navegación*/
 .menu-nav ul {
     display: flex;
     justify-content: center;
@@ -123,10 +133,15 @@ hr {
     margin-right: 5em;
 }
 
+nav ul li a {
+    transition: transform 1.5s, text-shadow 2s;
+}
 
 /*Cuando pasamos el cursor por encima se agranda el texto*/
-nav ul li, a:hover {
-    transform:scale(1.15);
+nav ul li a:hover {
+    transform:scale(1.35);
+    transform:matrix(0.8, -0.2, 0, 1.2, 0, 0);
+    text-shadow: 30px 30px 3px #000000;
 }
 
 /*Centramos el menu de navegación utilizando flex*/
@@ -150,6 +165,12 @@ body {
     width: 100vw;
 }
 
+/*ANIMACION PARA EL footer*/
+@keyframes footer {
+    0% {filter: opacity(0);}
+
+    100% {filter: opacity(100);}
+}
 
 /*Footer de las pagina*/
 footer {
@@ -160,17 +181,37 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 3em;
+    animation-name: footer;
+    animation-duration: 10s;
+}
+
+/*ANIMACION PARA LOS ICONOS*/
+@keyframes iconos {
+    0% {width: 0em; height: 0em;}
+    50%{width: 1em; height: 1em;}
+    100% {width: 2.2em; height: 2.2em;}
 }
 
 /*Da un ancho y un alto a los iconos*/
 .Iconos {
     width: 2.2em;
     height: 2.2em;
+    animation-name: iconos;
+    animation-duration: 10s;
 }
 
+
+@keyframes redes {
+    0% {margin-top: 0px;}
+    50%{margin-top: 50px;}
+    100% {margin-top: 120px;}
+}
 /*Situa a los iconos dentro del div*/
 #rsociales{
     margin-top: 120px;
+    animation-name: redes;
+    animation-duration: 10s;
+
 }
 
 /*Subraya cada apartado del menú de la pagína en la que nos encontramos actualmente*/
@@ -271,12 +312,21 @@ footer {
     margin:6em 12% 0em auto;
     border-radius: 3.125em;
     border: #2E534B solid 2.2em;
+    transition: border 6s, width 6s, height 6s;
+}
+
+.imagenmisproyectos:hover {
+    border: #2E534B solid 0em;
+    width: 30em;
+    height: 20em;
+
 }
 
 .imagenproyecto {
     width: 100%;
     height: 100%;
     border-radius: 3.125em;
+    transition: filter 6s;
 }
 
 .imagenproyecto:hover {

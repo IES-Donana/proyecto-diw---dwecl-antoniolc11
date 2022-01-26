@@ -141,7 +141,7 @@ nav ul li a {
 nav ul li a:hover {
     transform:scale(1.35);
     transform:matrix(0.8, -0.2, 0, 1.2, 0, 0);
-    text-shadow: 30px 30px 3px #000000;
+    text-shadow: 20px 17px 3px #000000;
 }
 
 /*Centramos el menu de navegación utilizando flex*/
@@ -176,6 +176,7 @@ details {
     position: absolute;
     z-index:-1;
     width: 100vw;
+    filter: opacity(15%);
 }
 
 /*ANIMACION PARA EL footer*/
@@ -193,7 +194,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 5.3em;
     animation-name: footer;
     animation-duration: 10s;
 }
@@ -288,7 +289,7 @@ footer {
 
 /*En la pagina de inicio me describe un poco*/
 #description-inicio {
-    margin: 3.7em auto 2em auto;
+    margin: 5em auto 2em auto;
     width:70%;
     text-align: center;
     font-family: Roboto-light;
@@ -325,7 +326,7 @@ footer {
     margin:6em 12% 0em auto;
     border-radius: 3.125em;
     border: #2E534B solid 2.2em;
-    transition: border 6s, width 6s, height 6s;
+    transition: border 2s, width 2s, height 2s;
 }
 
 .imagenmisproyectos:hover {
@@ -339,7 +340,7 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 3.125em;
-    transition: filter 6s;
+    transition: filter 2s;
 }
 
 .imagenproyecto:hover {
@@ -380,7 +381,6 @@ footer {
 
 #videotesti {
     width: 100%;
-    height: 100%;
     border-radius: 1em;
 }
 
@@ -583,9 +583,16 @@ font-family: Roboto-regular;
 #dialogo {
     background-color: #BAB4BF;
     border-width: 0;
-
+    padding: 2em;
 }
 
+#dialogo ul li {
+    margin-top: 0.5em;
+}
+
+#dialogo ul {
+    margin-top: 1.7em;
+}
 
 
 #mostrardatoscontacto {
@@ -603,7 +610,7 @@ font-family: Roboto-regular;
 }
 
 #cerrar {
-    margin-bottom: 13em;
+    margin-top: 8em;
     width: 100%;
     height: 2.5em;
     border-radius:0.4em;

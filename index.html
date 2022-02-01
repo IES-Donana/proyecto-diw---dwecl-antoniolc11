@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INICIO</title>
   <link rel="stylesheet" href="styles/style.css" type="text/css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <script src="js/menuhamburguesa.js" defer></script>
 </head>
 
 <body>
+  <audio src="audios/sonido-mp3.mp3" autoplay></audio>
   <header>
     <nav id="navprincipal">
+      <picture>
+        <source srcset="img/logotipo.png" media="(min-width: 400px)">
+        <img src="img/logotipo.png" id="logotipo" alt="MDN">
+      </picture>
       <div class="menu-nav">
         <ul>
           <li><a href="index.html" id="subrayadomenu">INICIO</a></li>
@@ -26,9 +33,9 @@
 
     <nav id="desplegable">
       <button id="botonmenu">
-          <hr>
-          <hr>
-          <hr>
+        <hr>
+        <hr>
+        <hr>
       </button>
     </nav>
   </header>
@@ -39,8 +46,12 @@
         <p>La idea no es vivir para siempre, la idea es crear algo que si lo haga...</p>
       </div>
 
-      <div id="imageninicio"></div>
-
+      <div id="imageninicio">
+        <picture>
+          <source srcset="img/portada2.jpeg" media="(min-width: 600px)">
+          <img src="img/portada1.jpeg" id="imagenportada" alt="MDN">
+        </picture>
+      </div>
     </div>
 
     <div id="description-inicio">
@@ -51,7 +62,15 @@
         se profundicen en todo lo que hago, haciendo que todo salga bien.
       </p>
     </div>
+
   </section>
+
+  <video src="videos/videofondo.mov" autoplay muted loop id="videofondo"></video>
+
+  <details>
+    <summary>Pulsame para ver Gif animado de mi logotipo.</summary>
+    <img src="animaciones/giff-animado.gif" id="animaciongif" alt="">
+  </details>
 
   <footer>
     <div id="rsociales">

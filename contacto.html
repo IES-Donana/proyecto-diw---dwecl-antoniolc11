@@ -11,11 +11,12 @@
   <script src="js/menuhamburguesa.js" defer></script>
 </head>
 <body>
+  <h1><!--Comentario--></h1>
   <header>
     <nav id="navprincipal">
       <picture>
         <source srcset="img/logotipo.png" media="(min-width: 400px)">
-        <img src="img/logotipo.png" id="logotipo" alt="MDN">
+        <img src="img/logotipo.png" id="logotipo" alt="Imagen del logotipo">
        </picture>
 
       <div class="menu-nav">
@@ -50,7 +51,7 @@
               <input type="number" name="telefono" id="telefono">
               <label for="email">Email: </label>
               <input type="text" name="email" id="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
-              <textarea name="mensaje" id="mensaje" placeholder="Describe brevemente en menos de 300 carácteres tu consulta." minlength="100" maxlength="300" required></textarea><br>
+              <textarea name="mensaje" id="mensaje" aria-label="text-area-contacto" placeholder="Describe brevemente en menos de 300 carácteres tu consulta." minlength="100" maxlength="300" required></textarea><br>
               <button type="submit" id="enviar">Enviar</button>
           </form>
         </div>
@@ -76,9 +77,9 @@
 
   <footer>
     <div id="rsociales">
-      <a href="https://twitter.com/afroman3619"><img src="img/twitter.JPG" alt="" class="Iconos"></a>
-      <a href="https://www.facebook.com/Antoniolc11"><img src="img/facebook.png" alt="" class="Iconos"></a>
-      <a href="https://www.instagram.com/antoniolc11/"><img src="img/instagram.JPG" alt="" class="Iconos"></a>
+      <a href="https://twitter.com/afroman3619"><img src="img/twitter.JPG" alt="Twitter" title="Twitter" class="Iconos"></a>
+      <a href="https://www.facebook.com/Antoniolc11"><img src="img/facebook.png" alt="Facebook"  title="Facebook" class="Iconos"></a>
+      <a href="https://www.instagram.com/antoniolc11/"><img src="img/instagram.JPG" alt="Instagran" title="Instagran" class="Iconos"></a>
     </div>
   </footer>
 </body>

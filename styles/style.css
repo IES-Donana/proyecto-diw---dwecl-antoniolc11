@@ -640,6 +640,10 @@ font-family: Roboto-regular;
     display: flex;
 }
 
+#desplegable img {
+    width: 2.5em;
+}
+
 #desplegable ul {
     display: block;
 }
@@ -647,6 +651,17 @@ font-family: Roboto-regular;
 /*Menú de navegación*/
 nav ul li, a {
     font-size: 0.9em;
+}
+
+
+nav ul li a {
+    transition: transform 2s;
+}
+
+/*Cuando pasamos el cursor por encima se agranda el texto*/
+nav ul li a:hover {
+    transform:scale(1);
+    text-shadow: none;
 }
 
 /*organiza la sección del proyecto en una columna*/

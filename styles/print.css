@@ -1,0 +1,578 @@
+@font-face {
+    font-family: "Roboto-regular";
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-light";
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+
+#desplegable {
+    display: none;
+}
+
+opcs-menu ul {
+    list-style: none;
+}
+
+.enabled-menu {
+    display: block;
+}
+
+.disable-menu {
+    display: none;
+}
+
+
+/***********************************************************************************************************************/
+
+
+
+/*Menú de navegación*/
+
+#navprincipal {
+    display: flex;
+    flex-direction: row;
+}
+
+/*LOGOTIPO DE LA PAGINA*/
+#logotipo {
+    width: 6rem;
+    margin-top: 0.5em;
+    margin-left: 1rem;
+}
+
+
+
+.menu-nav ul li, a {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto 0.2em auto 1em;
+    font-size: 1.2em;
+    color: #4e615d;
+    font-family: Roboto-regular;
+}
+
+/*transition menu de navegación*/
+.menu-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-nav ul li a {
+    transition: transform 1.5s;
+}
+
+
+/*Centramos el menu de navegación utilizando flex*/
+.menu-nav {
+    display: flex;
+    justify-content: center;
+}
+
+/*Color del fondo de la pagina*/
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color:#EBE1E4;
+}
+
+details {
+    text-align: center;
+    color: #2E534B;
+    font-size: 1.3em;
+}
+
+#animaciongif {
+    width: 15%;
+    border-radius: 2em;
+    margin-top: 0.5em;
+}
+
+
+#videofondo {
+    display: none;
+}
+
+
+
+/*Footer de las pagina*/
+footer {
+    background-color: #BAB4BF;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: footer;
+    animation-duration: 10s;
+
+}
+
+#validadores-imagen img{
+    width: 5em;
+    margin-top: 1em;
+}
+
+
+/*Da un ancho y un alto a los iconos*/
+.Iconos {
+    width: 2.2em;
+    height: 2.2em;
+}
+
+
+/*Situa a los iconos dentro del div*/
+#rsociales{
+    margin-top: 120px;
+}
+
+/*Subraya cada apartado del menú de la pagína en la que nos encontramos actualmente*/
+#subrayadomenu{
+    text-decoration: underline #2E534B 2px;
+    font-size: 1.4em;
+    font-family: Roboto-bold;
+}
+
+/*organiza la sección del proyecto en una columna*/
+.containercolumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Organiza la sección de la pagina principal en forma de fila*/
+.containerrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*-----------------------------------------INICIO---------------------------------------------*/
+
+/*Frase de la pagina de inicio*/
+
+#fraseinicio p::first-letter {
+   font-size: 1.5em;
+}
+
+#fraseinicio {
+    width: 10em;
+    font-size: 2.7em;
+    color: #2E534B;
+    font-family: Roboto-light;
+    margin: auto -5% auto auto;
+}
+
+
+/*Contenido multimedia imagen de pagina de inicio*/
+#imageninicio {
+
+    background-color: grey;
+    height: 15em;
+    width: 26em;
+    transform: rotate(173deg);
+    border-radius: 3.125em;
+    border: #2E534B solid 2.2em;
+    margin: 3.6em auto auto auto;
+
+}
+
+#imagenportada {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    transform: rotate(179.8deg);
+}
+
+/*En la pagina de inicio me describe un poco*/
+#description-inicio {
+    margin: 5em auto 2em auto;
+    width:70%;
+    text-align: center;
+    font-family: Roboto-light;
+    font-size: 1.5em;
+    color: #4e615d;
+}
+/**********************************************************************************************/
+
+/*-------------------------------------MIS PROYECTOS------------------------------------------*/
+
+.titulo {
+    width: 4em;
+    height: 2em;
+    margin: 1.5em auto 0em 12%;
+    font-size: 40px;
+    color: #2E534B;
+}
+
+.description-proyect {
+    width:28em;
+    height: 9em;
+    padding: 10px;
+    margin-left: 10.5%;
+    margin-right: auto;
+    font-family: Roboto-light;
+    font-size: 20px;
+    color: #4e615d;
+}
+
+.imagenmisproyectos {
+    background-color: grey;
+    height: 12em;
+    width: 26em;
+    margin:6em 0% 0em 8em;
+    border-radius: 3.125em;
+    border: #2E534B solid 2.2em;
+    transition: border 2s, width 2s, height 2s;
+    margin-bottom: 2em;
+
+}
+
+.imagenmisproyectos:hover {
+    border: #2E534B solid 0em;
+    width: 30em;
+    height: 20em;
+
+}
+
+.imagenproyecto {
+    width: 100%;
+    height: 100%;
+    border-radius: 3.125em;
+    transition: filter 2s;
+}
+
+/**********************************************************************************************/
+
+/*------------------------------------TESTIMONIOS---------------------------------------------*/
+
+.nombrecliente {
+    width: 12em;
+    height: 2em;
+    margin: 2.5em auto 0 12%;
+    font-size: 1.5em;
+    color: #2E534B;
+    font-family: "Roboto-bold";
+}
+
+.comentariocliente {
+    width:28em;
+    height: 9em;
+    padding: 0.5em;
+    margin-left: 10.5%;
+    margin-right: auto;
+    font-family: Roboto-light;
+    font-size: 19px;
+    color: #4e615d;
+}
+
+.multimediaclientes {
+    display: none;
+}
+
+/**********************************************************************************************/
+
+/*-------------------------------------------CV-----------------------------------------------*/
+
+.tituloscv {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.9em;
+}
+
+/*div que contiene cada linea de tiempo*/
+.linea-tiempo {
+    position: relative;
+    width: 40.5em;
+    max-width: 95vw;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 3em;
+  }
+
+  .momento {
+    position: relative;
+    width: 45%;
+    font-family: Roboto-regular;
+    box-sizing: border-box; /*eli*/
+  }
+
+  /*Coloca elementos segun seán pares en la derecha de la linea de tiempo*/
+  .momento:nth-child(even) {
+    left: 55%;
+  }
+
+  .linea-tiempo::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #000;
+    left: 50%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .momento::after {
+    content: '';
+    position: absolute;
+    top: calc(50% + 10px);
+    right: calc(-11.11% - 11.5px);
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  .momento:nth-child(even)::after {
+    left: calc(-11.11% - 8.5px);
+  }
+
+  .momento h1 {
+    margin: 0.6em 0;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .momento .descripcion {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1.4em;
+    font-size: 1em;
+  }
+  .momento .descripcion::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: calc(50% + 10px);
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid white;
+  }
+
+  .momento:nth-child(even) .descripcion {
+    background-color: white;
+    color: black;
+  }
+
+  .momento:nth-child(even) .descripcion::after{
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid white;
+    border-left: none;
+  }
+
+
+/**********************************************************************************************/
+
+/*-------------------------------------SOBRE MÍ-----------------------------------------------*/
+
+
+#fotopersonal img{
+    width: 12em;
+    height: 15em;
+    margin-left: 3em;
+}
+
+
+#listasdescritiva {
+    width: 80%;
+    color: #2E534B;
+    font-family: Roboto-light;
+    border: #000 solid;
+}
+
+#sobremi {
+    margin-top: 3.3em;
+    margin-left: 2em;
+    font-size: 1.5em;
+    color: #2E534B;
+    font-family: Roboto-bold;
+}
+
+#descripcionpersonal {
+    font-size: 1.2em;
+    margin: auto;
+    color: #2E534B;
+    font-family: Roboto-light;
+    width: 35em;
+}
+
+#alargarsesion {
+    min-height: 70vh;
+}
+
+/**********************************************************************************************/
+
+/*-------------------------------------CONTACTO-----------------------------------------------*/
+/*organiza la pagina de contacto la parte de nuestros datos*/
+
+.tituloscontacto {
+    font-family: Roboto-light;
+    text-align: center;
+    margin: auto;
+}
+
+form{
+	width:24.9em;
+	padding:16px;
+	margin:auto;
+}
+
+form label{
+	width:4.5em;
+	display:inline-block;
+    font-family: Roboto-regular;
+}
+
+form input {
+	width:300px;
+    height: 1.5em;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:0.4em;
+	margin:0.5em 0 1.6em 0;
+	display:inline-block;
+}
+
+#enviar:hover {
+    color: #2E534B;
+    background-color: white;
+}
+
+#enviar {
+    width: 100%;
+    height: 2.5em;
+    border-radius:0.4em;
+    border: #f6f6f6;
+    background-color: #BAB4BF;
+}
+
+textarea{
+	width:98%;
+	height:8.5em;
+	border:1px solid #f6f6f6;
+	border-radius:0.4em;
+	margin:0.5em 0 1.5em 0;
+	resize:none;
+	display:block;
+}
+
+#infocontacto {
+margin: auto;
+font-family: Roboto-regular;
+}
+
+#dialogo {
+    background-color: #BAB4BF;
+    border-width: 0;
+    padding: 2em;
+}
+
+#dialogo ul li {
+    margin-top: 0.5em;
+}
+
+#dialogo ul {
+    margin-top: 1.7em;
+}
+
+
+#mostrardatoscontacto {
+    width: 100%;
+    height: 2.5em;
+    border-radius:0.4em;
+    border: #f6f6f6;
+    background-color: #EBE1E4;
+    font-size: 1em;
+
+}
+
+#mostrardatoscontacto:hover {
+    font-size: 1.4em;
+}
+
+#cerrar {
+    margin-top: 8em;
+    width: 100%;
+    height: 2.5em;
+    border-radius:0.4em;
+    border: #f6f6f6;
+    background-color: #EBE1E4;
+    font-size: 1em;
+}
+
+/**********************************************************************************************/
+
+
+/**********************************************************************************************/
+
+
+.breadcrumb ul { list-style: none; } 
+.breadcrumb ul li { display: inline; } 
+
+.breadcrumb ul li+li:before {
+        content: ">";
+        padding: 10px;  
+    }
+.breadcrumb  ul li a { text-decoration: none; } 
+.breadcrumb  ul li a:hover { text-decoration: underline; } 
+
+
+.busqueda{
+    width: 150px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .busqueda input#search{
+    width: 150px;
+    height: 30px;
+    background: white;
+    border: none;
+    font-size: 10pt;
+    float: left;
+   
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  .breadcrumb-y-busqueda {
+      display: flex;
+      flex-direction:row;
+      justify-content: space-between;
+      /* padding: 0 2em; */
+      max-width: 87%;
+  }
+ 
+  .breadcrumb-y-busqueda .busqueda {
+
+    /* margin: auto; */
+
+    display: flex;
+    align-items: center;
+
+}
+
+.busqueda-index {
+    height: 2em;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 86%;
+}
